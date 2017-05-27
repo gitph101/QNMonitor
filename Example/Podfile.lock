@@ -1,0 +1,22 @@
+PODS:
+  - Expecta (1.0.5)
+  - QNMonitor (0.1.0)
+  - Specta (1.0.6)
+
+DEPENDENCIES:
+  - Expecta
+  - QNMonitor (from `../`)
+  - Specta
+
+EXTERNAL SOURCES:
+  QNMonitor:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
+  QNMonitor: afba2e08f4264630cefba8612a53bb845fa5ef3d
+  Specta: f506f3a8361de16bc0dcf3b17b75e269072ba465
+
+PODFILE CHECKSUM: 1d3bad765766dbf220e8e81ac0bb980539bf56e8
+
+COCOAPODS: 1.2.1

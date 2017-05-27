@@ -1,0 +1,6 @@
+framework module QNMonitor {
+  umbrella header "QNMonitor-umbrella.h"
+
+  export *
+  module * { export * }
+}
