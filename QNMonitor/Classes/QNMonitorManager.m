@@ -55,7 +55,7 @@
 - (void)startMonitoring {
         
     self.cpu = [[UIDevice currentDevice] cpuUsage];
-    self.memory = [[UIDevice currentDevice] memoryUsed]/[[UIDevice currentDevice] memoryTotal];
+    self.memory = [[UIDevice currentDevice] memoryUsed]/1000/1000.0;
     self.fps = [QNFPSMonitor sharedMonitor].fps;
     [self.monitorView showValueFPS:self.fps cpu:self.cpu memory:self.memory];
 }
@@ -63,7 +63,7 @@
 -(void)updateFPS:(QNFPSMonitor *)monitor fps:(NSInteger)fps
 {
     self.cpu = [[UIDevice currentDevice] cpuUsage];
-    self.memory = [[UIDevice currentDevice] memoryFree] * 1.0/[[UIDevice currentDevice] memoryTotal] * 1.0;
+    self.memory = [[UIDevice currentDevice] memoryFree]/1000/1000.0;
     self.fps = [QNFPSMonitor sharedMonitor].fps;
     [self.monitorView showValueFPS:self.fps cpu:self.cpu memory:self.memory];
 }

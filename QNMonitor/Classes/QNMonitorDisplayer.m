@@ -56,7 +56,7 @@
     NSMutableAttributedString *attributedStringFPS = [self attributedStringFPS:fps];
     NSMutableAttributedString *attributedStringCPU = [self attributedStringCPU:cpu];
     
-    NSMutableAttributedString *attributedStringMemory = [self attributedStringCPU:memory];
+    NSMutableAttributedString *attributedStringMemory = [self attributedStringMemory:memory];
     
     [attributedStringCPU appendAttributedString:attributedStringMemory];
     [attributedStringCPU appendAttributedString:attributedStringFPS];
