@@ -12,7 +12,6 @@
 		09B18A0AFD81C25D53BC3FC246DA2349 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D8173434FE00016739EAFDEFEA9313 /* Foundation.framework */; };
 		0B31323399EFE31FB68A039BB782FE14 /* Specta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1EC781C67B94698BC0FD79F6926656 /* Specta-dummy.m */; };
 		0E86BBA3A65849769B47995A5E91C881 /* Expecta-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6BE4E35D0AA9FEFC1DA27890CBA2A19 /* Expecta-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0F78ECED762940522152DCE0769CBDA6 /* UIDevice+QNTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6083A1F4DF0615A807494309F03FC8 /* UIDevice+QNTools.m */; };
 		1009851D0C0B3FCBC574C414CC4D31B0 /* EXPMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A21F86A69C9F106AA92ADFA3CD7C46C /* EXPMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11948E16BF3548C7BABF77C532966B84 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBDD60AB5EC0183A198A13D9A5D7BCE /* XCTest.framework */; };
 		130F52DF094C0D82506C399C9CFF5740 /* SPTTestSuite.h in Headers */ = {isa = PBXBuildFile; fileRef = AEF01BA5773CAF9B2F6768A5AEB29504 /* SPTTestSuite.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,7 +23,6 @@
 		217598734719B0D98EB089B349F3D4E7 /* SpectaTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 51F8C648CB722FE51238487FAECC1517 /* SpectaTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		285C6F6BE59E632CB219CD98B4EDC1AA /* EXPMatchers+endWith.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B01F350337B25F09061F55C2252CBD6 /* EXPMatchers+endWith.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2916D75F69E777954F5BF46AE63C52C0 /* EXPMatchers+beSubclassOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACF80B5A24CE07B6C736EEF474E7E9C /* EXPMatchers+beSubclassOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		2EEEBD2516ED4C2CA409E8D1A65FC36A /* QNTopWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 570842FE3924AF0275B39A5593F11022 /* QNTopWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		361B58CE2A28E03CA83A73617ED739F2 /* EXPMatchers+raise.m in Sources */ = {isa = PBXBuildFile; fileRef = A125E7E80B5C2A367F184455B08495B1 /* EXPMatchers+raise.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		38D8F36B3588236BD61C105E8F7AA0D0 /* QNMonitorDisplayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 10482CB8FCE7B34236B7F0BDFAC2B397 /* QNMonitorDisplayer.m */; };
 		39461DAB3DE2637F4AE2BA94F19DCF2B /* EXPDoubleTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = DA5EBB318D16AE6EC1958DC8510C228D /* EXPDoubleTuple.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -45,7 +43,6 @@
 		51FCC9EDD6B60BF63B5EF7CAC94CCF23 /* EXPMatchers+conformTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F770E0A0B3B0D2789D92A52AD3ABAE /* EXPMatchers+conformTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		53AA7B0A03A2DB3B7E37E1C23E5D406C /* BSBacktraceLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A5A6A672C8FF35D7BA6677ED7493AC4 /* BSBacktraceLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55F1015453461A284C621706BC2CDBD9 /* XCTest+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B320B192BAA2B7B006880B016A39AB10 /* XCTest+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		577ABD1EBCD6E56C050A07614E48D77B /* UIDevice+QNTools.h in Headers */ = {isa = PBXBuildFile; fileRef = ACAB739705DD57E2AE36F6581EE1396E /* UIDevice+QNTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5844C2B8C2FF23AFD99DDA98E7820D03 /* Specta.h in Headers */ = {isa = PBXBuildFile; fileRef = D61BC75AB795DFB7AE9CF80D79C1B530 /* Specta.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5922E3B61E351E2A21095BD92E4FE8AC /* NSValue+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = DEB33EA3C18646B1DA6384B7C356C458 /* NSValue+Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		597E5A323FD0306B81C3F7E9C8E5580D /* EXPMatchers+match.h in Headers */ = {isa = PBXBuildFile; fileRef = 36BB29C27B61C055294A8316529A8EF8 /* EXPMatchers+match.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -114,7 +111,6 @@
 		CD8864F7564D68ACC4EDFAD622F512A6 /* SpectaUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 7687931B86D55C2A3B7570964EEFDEAB /* SpectaUtility.m */; };
 		CE7E4C141657D23213C7FAE616D7FA75 /* EXPMatchers+beLessThanOrEqualTo.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E90BF1DB04C094A5015446308F5C85 /* EXPMatchers+beLessThanOrEqualTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D1768C977F0CD5B420D1A1D2375CDBD4 /* Expecta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3A245D75F8D2D0FFAD5230F5925974 /* Expecta-dummy.m */; };
-		D8182824F6CA5CB4786FEE034FBED0D8 /* QNTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A10CE69137B06A97BF2B95E166035B1 /* QNTopWindow.m */; };
 		D93CE5400B76D022153B6BCFDB714989 /* SpectaUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = C7A1FE2006A967BE06886C450214BDFE /* SpectaUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB8F3665E9E382DF52E0DCB4DECE5EAE /* NSObject+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EF2564A5B3BCF5B727F63C626FF9935 /* NSObject+Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC27B4471CD126D56A1307B0E0C0AE6F /* QNWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = B199435C489724AC1861927924A6C588 /* QNWeakProxy.m */; };
@@ -123,8 +119,12 @@
 		DF784E091320D910824D70426997C9D1 /* QNFPSMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EC1F5378A9E7A8B62A056B54D8CF548 /* QNFPSMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DF883524C3F35145D74166C01BCFCFC3 /* EXPMatchers+beKindOf.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CC760F73E42A321D6401C619837229 /* EXPMatchers+beKindOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E233F5CF4BF16CFB539804C4E995C355 /* EXPMatchers+beLessThan.h in Headers */ = {isa = PBXBuildFile; fileRef = 42EC02837F7465B7AED8E1A256D57C91 /* EXPMatchers+beLessThan.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E2D700111ED97C4A009BC3D7 /* QNCrashMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = E2D7000F1ED97C4A009BC3D7 /* QNCrashMonitor.h */; };
-		E2D700121ED97C4A009BC3D7 /* QNCrashMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D700101ED97C4A009BC3D7 /* QNCrashMonitor.m */; };
+		E2D7001C1ED98332009BC3D7 /* QNCrashMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = E2D700141ED98332009BC3D7 /* QNCrashMonitor.h */; };
+		E2D7001D1ED98332009BC3D7 /* QNCrashMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D700151ED98332009BC3D7 /* QNCrashMonitor.m */; };
+		E2D7001E1ED98332009BC3D7 /* QNTopWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = E2D700171ED98332009BC3D7 /* QNTopWindow.h */; };
+		E2D7001F1ED98332009BC3D7 /* QNTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D700181ED98332009BC3D7 /* QNTopWindow.m */; };
+		E2D700201ED98332009BC3D7 /* UIDevice+QNTools.h in Headers */ = {isa = PBXBuildFile; fileRef = E2D700191ED98332009BC3D7 /* UIDevice+QNTools.h */; };
+		E2D700211ED98332009BC3D7 /* UIDevice+QNTools.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D7001A1ED98332009BC3D7 /* UIDevice+QNTools.m */; };
 		E3355DB3F63F6FE79FD8DD6188B0B3A4 /* EXPMatchers+contain.h in Headers */ = {isa = PBXBuildFile; fileRef = AE94674608619558EA8DCEBE8902C148 /* EXPMatchers+contain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E553753F179E4F5A2885364AB6C089ED /* SPTGlobalBeforeAfterEach.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CF3903D943792CF71D2E59A5FE6602 /* SPTGlobalBeforeAfterEach.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E61E28B50602F353D95914765667969F /* EXPMatcherHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 27576C638FD3AB691E7F4FB1E3980464 /* EXPMatcherHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -207,7 +207,6 @@
 		368DA0D8D93C6FCC83DAB722E9BCD697 /* Pods-QNMonitor_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QNMonitor_Example-dummy.m"; sourceTree = "<group>"; };
 		36BB29C27B61C055294A8316529A8EF8 /* EXPMatchers+match.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+match.h"; path = "Expecta/Matchers/EXPMatchers+match.h"; sourceTree = "<group>"; };
 		393405584126BC701B16CB695FBEC1B0 /* EXPMatchers+postNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+postNotification.m"; path = "Expecta/Matchers/EXPMatchers+postNotification.m"; sourceTree = "<group>"; };
-		3A10CE69137B06A97BF2B95E166035B1 /* QNTopWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = QNTopWindow.m; sourceTree = "<group>"; };
 		3ACF80B5A24CE07B6C736EEF474E7E9C /* EXPMatchers+beSubclassOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beSubclassOf.m"; path = "Expecta/Matchers/EXPMatchers+beSubclassOf.m"; sourceTree = "<group>"; };
 		3B236E34C19DC967CCE978293BCF8C5E /* SPTSpec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTSpec.m; path = Specta/Specta/SPTSpec.m; sourceTree = "<group>"; };
 		3B6DF8F89EC26F944197244B9F2AAB15 /* EXPMatchers+beCloseTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beCloseTo.h"; path = "Expecta/Matchers/EXPMatchers+beCloseTo.h"; sourceTree = "<group>"; };
@@ -217,14 +216,12 @@
 		408EA78FA928332DAE21B1527BCC7A2F /* EXPMatchers+beTruthy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beTruthy.m"; path = "Expecta/Matchers/EXPMatchers+beTruthy.m"; sourceTree = "<group>"; };
 		42EC02837F7465B7AED8E1A256D57C91 /* EXPMatchers+beLessThan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beLessThan.h"; path = "Expecta/Matchers/EXPMatchers+beLessThan.h"; sourceTree = "<group>"; };
 		450694B369CC2BB81C4FAB4DEB79C498 /* Pods-QNMonitor_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QNMonitor_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		4B6083A1F4DF0615A807494309F03FC8 /* UIDevice+QNTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+QNTools.m"; sourceTree = "<group>"; };
 		4BE04B089571876B035E78AC5118CD5E /* QNMonitorDisplayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QNMonitorDisplayer.h; sourceTree = "<group>"; };
 		4CF1CEB2A77E5AC5B8DE4C367438B8AE /* QNMonitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QNMonitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F67D8E8E16F0E77A2D4E5F714CEBC41 /* EXPBlockDefinedMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPBlockDefinedMatcher.m; path = Expecta/EXPBlockDefinedMatcher.m; sourceTree = "<group>"; };
 		51F770E0A0B3B0D2789D92A52AD3ABAE /* EXPMatchers+conformTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+conformTo.m"; path = "Expecta/Matchers/EXPMatchers+conformTo.m"; sourceTree = "<group>"; };
 		51F8C648CB722FE51238487FAECC1517 /* SpectaTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaTypes.h; path = Specta/Specta/SpectaTypes.h; sourceTree = "<group>"; };
 		54371815367C40EDB52FBDB27B2DBA70 /* Expecta-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Expecta-prefix.pch"; sourceTree = "<group>"; };
-		570842FE3924AF0275B39A5593F11022 /* QNTopWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QNTopWindow.h; sourceTree = "<group>"; };
 		5914258F13A4BE6474E74100134E79D0 /* QNFluencyMonitor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QNFluencyMonitor.h; sourceTree = "<group>"; };
 		592E81109E597E27A3D9DBB86ABBE590 /* EXPMatchers+beGreaterThanOrEqualTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beGreaterThanOrEqualTo.h"; path = "Expecta/Matchers/EXPMatchers+beGreaterThanOrEqualTo.h"; sourceTree = "<group>"; };
 		5B01F350337B25F09061F55C2252CBD6 /* EXPMatchers+endWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+endWith.m"; path = "Expecta/Matchers/EXPMatchers+endWith.m"; sourceTree = "<group>"; };
@@ -280,7 +277,6 @@
 		AA2364F990290F821A2CB900471FBE2A /* Specta.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Specta.modulemap; sourceTree = "<group>"; };
 		AA2D86876643D2803FBF58BD3C0BE625 /* EXPMatchers+beInTheRangeOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beInTheRangeOf.h"; path = "Expecta/Matchers/EXPMatchers+beInTheRangeOf.h"; sourceTree = "<group>"; };
 		ABE29471E8953384B36B17DC33FB8C75 /* XCTestCase+Specta.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XCTestCase+Specta.m"; path = "Specta/Specta/XCTestCase+Specta.m"; sourceTree = "<group>"; };
-		ACAB739705DD57E2AE36F6581EE1396E /* UIDevice+QNTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIDevice+QNTools.h"; sourceTree = "<group>"; };
 		AD9A1402E8720FD00C46040083DC9692 /* EXPMatchers+beIdenticalTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beIdenticalTo.h"; path = "Expecta/Matchers/EXPMatchers+beIdenticalTo.h"; sourceTree = "<group>"; };
 		AE94674608619558EA8DCEBE8902C148 /* EXPMatchers+contain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+contain.h"; path = "Expecta/Matchers/EXPMatchers+contain.h"; sourceTree = "<group>"; };
 		AEF01BA5773CAF9B2F6768A5AEB29504 /* SPTTestSuite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTTestSuite.h; path = Specta/Specta/SPTTestSuite.h; sourceTree = "<group>"; };
@@ -316,8 +312,12 @@
 		DF4D33F041C8104408EC5CD85F30D247 /* ExpectaObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ExpectaObject.m; path = Expecta/ExpectaObject.m; sourceTree = "<group>"; };
 		DF5966F05CD1198629BF447653497239 /* EXPMatchers+beInstanceOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beInstanceOf.m"; path = "Expecta/Matchers/EXPMatchers+beInstanceOf.m"; sourceTree = "<group>"; };
 		E156AF9341293266845AA8774ED518EA /* EXPMatchers+beFalsy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beFalsy.m"; path = "Expecta/Matchers/EXPMatchers+beFalsy.m"; sourceTree = "<group>"; };
-		E2D7000F1ED97C4A009BC3D7 /* QNCrashMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNCrashMonitor.h; sourceTree = "<group>"; };
-		E2D700101ED97C4A009BC3D7 /* QNCrashMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNCrashMonitor.m; sourceTree = "<group>"; };
+		E2D700141ED98332009BC3D7 /* QNCrashMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNCrashMonitor.h; sourceTree = "<group>"; };
+		E2D700151ED98332009BC3D7 /* QNCrashMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNCrashMonitor.m; sourceTree = "<group>"; };
+		E2D700171ED98332009BC3D7 /* QNTopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNTopWindow.h; sourceTree = "<group>"; };
+		E2D700181ED98332009BC3D7 /* QNTopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNTopWindow.m; sourceTree = "<group>"; };
+		E2D700191ED98332009BC3D7 /* UIDevice+QNTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+QNTools.h"; sourceTree = "<group>"; };
+		E2D7001A1ED98332009BC3D7 /* UIDevice+QNTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+QNTools.m"; sourceTree = "<group>"; };
 		E4286F5B187014B00F18766782F7018D /* SPTExampleGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExampleGroup.h; path = Specta/Specta/SPTExampleGroup.h; sourceTree = "<group>"; };
 		E4FC81E8A2192095B62E17BD1B3546F8 /* Pods-QNMonitor_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QNMonitor_Example-umbrella.h"; sourceTree = "<group>"; };
 		E5243970B8539E1EC1B4F0D8C709D8D6 /* Pods-QNMonitor_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QNMonitor_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -384,16 +384,12 @@
 		0CDBB59FB3DA2F499A37A56CC2CB5F67 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				E2D7000F1ED97C4A009BC3D7 /* QNCrashMonitor.h */,
-				E2D700101ED97C4A009BC3D7 /* QNCrashMonitor.m */,
+				E2D700131ED98332009BC3D7 /* CrashMonitor */,
+				E2D700161ED98332009BC3D7 /* Tools */,
 				4BE04B089571876B035E78AC5118CD5E /* QNMonitorDisplayer.h */,
 				10482CB8FCE7B34236B7F0BDFAC2B397 /* QNMonitorDisplayer.m */,
 				07576585ABE14703B22298EA975CDEC5 /* QNMonitorManager.h */,
 				84F1715AB308634953D12EB8764DAE17 /* QNMonitorManager.m */,
-				570842FE3924AF0275B39A5593F11022 /* QNTopWindow.h */,
-				3A10CE69137B06A97BF2B95E166035B1 /* QNTopWindow.m */,
-				ACAB739705DD57E2AE36F6581EE1396E /* UIDevice+QNTools.h */,
-				4B6083A1F4DF0615A807494309F03FC8 /* UIDevice+QNTools.m */,
 				E9931A815295961CAEE63E745B6B7808 /* FluencyMonitor */,
 				F2AE055108A82A50FF72F9E28150FE3D /* FPSMonitor */,
 			);
@@ -669,6 +665,26 @@
 			path = "Target Support Files/Pods-QNMonitor_Example";
 			sourceTree = "<group>";
 		};
+		E2D700131ED98332009BC3D7 /* CrashMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				E2D700141ED98332009BC3D7 /* QNCrashMonitor.h */,
+				E2D700151ED98332009BC3D7 /* QNCrashMonitor.m */,
+			);
+			path = CrashMonitor;
+			sourceTree = "<group>";
+		};
+		E2D700161ED98332009BC3D7 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				E2D700171ED98332009BC3D7 /* QNTopWindow.h */,
+				E2D700181ED98332009BC3D7 /* QNTopWindow.m */,
+				E2D700191ED98332009BC3D7 /* UIDevice+QNTools.h */,
+				E2D7001A1ED98332009BC3D7 /* UIDevice+QNTools.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		E9931A815295961CAEE63E745B6B7808 /* FluencyMonitor */ = {
 			isa = PBXGroup;
 			children = (
@@ -715,9 +731,7 @@
 				B07E90437B45E90ADF32B766AB487986 /* QNMonitor-umbrella.h in Headers */,
 				A9BF67099FE726B1250E1F912029E788 /* QNMonitorDisplayer.h in Headers */,
 				4F3C4C4FF7F17F6103FD7B7BEFECE578 /* QNMonitorManager.h in Headers */,
-				2EEEBD2516ED4C2CA409E8D1A65FC36A /* QNTopWindow.h in Headers */,
 				BDB253E38F92064F58E9860B25CE34AE /* QNWeakProxy.h in Headers */,
-				577ABD1EBCD6E56C050A07614E48D77B /* UIDevice+QNTools.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -772,11 +786,13 @@
 				87AE70A44BD8E8676B2A3EDB6E334138 /* EXPMatchers+endWith.h in Headers */,
 				425C4DFD1FAB011D70F825631144BC4C /* EXPMatchers+equal.h in Headers */,
 				8F990515E868D90C15D2148DD1A22403 /* EXPMatchers+haveCountOf.h in Headers */,
+				E2D700201ED98332009BC3D7 /* UIDevice+QNTools.h in Headers */,
+				E2D7001E1ED98332009BC3D7 /* QNTopWindow.h in Headers */,
 				597E5A323FD0306B81C3F7E9C8E5580D /* EXPMatchers+match.h in Headers */,
 				A2D3CFFEBD3AEA2164A535192492F3B8 /* EXPMatchers+postNotification.h in Headers */,
 				A8446D8224F103BE7F4A5237A60F0EFB /* EXPMatchers+raise.h in Headers */,
 				B3F189747A7A3CEDA9200CB2749AC7D8 /* EXPMatchers+raiseWithReason.h in Headers */,
-				E2D700111ED97C4A009BC3D7 /* QNCrashMonitor.h in Headers */,
+				E2D7001C1ED98332009BC3D7 /* QNCrashMonitor.h in Headers */,
 				DED9AE33B24B462D4B44FE94383B35F4 /* EXPMatchers+respondTo.h in Headers */,
 				9CAFC7DAE2E661FC92393E5CC55D1D61 /* EXPMatchers.h in Headers */,
 				60CD83FA1B2BF6E93B59834C1E0CBEF0 /* EXPUnsupportedObject.h in Headers */,
@@ -967,9 +983,7 @@
 				E8C37A7695B14EE99B1EE863936A9229 /* QNMonitor-dummy.m in Sources */,
 				38D8F36B3588236BD61C105E8F7AA0D0 /* QNMonitorDisplayer.m in Sources */,
 				3D6C6D06B6E67D11ABFEF9BC83046B5B /* QNMonitorManager.m in Sources */,
-				D8182824F6CA5CB4786FEE034FBED0D8 /* QNTopWindow.m in Sources */,
 				DC27B4471CD126D56A1307B0E0C0AE6F /* QNWeakProxy.m in Sources */,
-				0F78ECED762940522152DCE0769CBDA6 /* UIDevice+QNTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -987,6 +1001,7 @@
 			files = (
 				9E4463D68D13C127762B1ACB8249B64C /* EXPBlockDefinedMatcher.m in Sources */,
 				01F278A54C85C2C865DDAD4090C559B6 /* EXPDoubleTuple.m in Sources */,
+				E2D700211ED98332009BC3D7 /* UIDevice+QNTools.m in Sources */,
 				D1768C977F0CD5B420D1A1D2375CDBD4 /* Expecta-dummy.m in Sources */,
 				99E6D51A8A4E3FFB7601D182D995A3BA /* ExpectaObject.m in Sources */,
 				1D676445A1446539D4B722E6EF0C802A /* ExpectaSupport.m in Sources */,
@@ -1009,10 +1024,11 @@
 				AC0AB78F3A7629ED1C7F3F82BBB3F471 /* EXPMatchers+beSupersetOf.m in Sources */,
 				98571BE17A46245CA1717CF9157A0807 /* EXPMatchers+beTruthy.m in Sources */,
 				51FCC9EDD6B60BF63B5EF7CAC94CCF23 /* EXPMatchers+conformTo.m in Sources */,
+				E2D7001F1ED98332009BC3D7 /* QNTopWindow.m in Sources */,
 				9EA076D25036A0F4765FF3FB57CF4A6A /* EXPMatchers+contain.m in Sources */,
 				285C6F6BE59E632CB219CD98B4EDC1AA /* EXPMatchers+endWith.m in Sources */,
 				E6D59CAA2A6E134A4643254406ED11F2 /* EXPMatchers+equal.m in Sources */,
-				E2D700121ED97C4A009BC3D7 /* QNCrashMonitor.m in Sources */,
+				E2D7001D1ED98332009BC3D7 /* QNCrashMonitor.m in Sources */,
 				C676818DADAC76EE2FDC5533CBF3648A /* EXPMatchers+haveCountOf.m in Sources */,
 				BC530A8234C398F9F3AD1A1D41670B65 /* EXPMatchers+match.m in Sources */,
 				9F51005FE4BF10FA9906B02DAD609C6E /* EXPMatchers+postNotification.m in Sources */,
