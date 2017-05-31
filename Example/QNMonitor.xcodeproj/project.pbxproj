@@ -254,6 +254,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = gitph101;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = V8GY4D3AU8;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -528,6 +531,7 @@
 			baseConfigurationReference = 3FDD58239CD27BAFE2084DBD /* Pods-QNMonitor_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V8GY4D3AU8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -547,6 +551,7 @@
 			baseConfigurationReference = 7675E39EDE194E8671EB012B /* Pods-QNMonitor_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V8GY4D3AU8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

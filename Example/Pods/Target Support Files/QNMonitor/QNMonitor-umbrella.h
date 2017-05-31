@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "QNCrashMonitor.h"
 #import "BSBacktraceLogger.h"
 #import "QNFluencyMonitor.h"
 #import "QNFPSDisplayer.h"

@@ -7,9 +7,8 @@
 //
 
 #import "QNViewController.h"
-#import "QNFluencyMonitor.h"
-#import "QNFPSDisplayer.h"
 #import "QNMonitorManager.h"
+#import "QNFluencyMonitor.h"
 
 @interface QNViewController ()
 
