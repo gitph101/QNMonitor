@@ -55,7 +55,6 @@
 
     NSMutableAttributedString *attributedStringFPS = [self attributedStringFPS:fps];
     NSMutableAttributedString *attributedStringCPU = [self attributedStringCPU:cpu];
-    
     NSMutableAttributedString *attributedStringMemory = [self attributedStringMemory:memory];
     
     [attributedStringCPU appendAttributedString:attributedStringMemory];
@@ -63,7 +62,6 @@
     
     self.monitorLabel.attributedText = attributedStringCPU;
 }
-
 
 
 -(NSMutableAttributedString *)attributedStringFPS:(float)fps{
@@ -108,7 +106,6 @@
         _monitorLabel = [[UILabel alloc]initWithFrame:self.bounds];
         _monitorLabel.textAlignment = NSTextAlignmentCenter;
         _monitorLabel.backgroundColor = [UIColor colorWithWhite:0.000 alpha:0.700];
-        
     }
     return _monitorLabel;
 }

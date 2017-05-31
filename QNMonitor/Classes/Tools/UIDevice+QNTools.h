@@ -62,6 +62,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// Purgable memory in byte. (-1 when error occurs)
 @property (nonatomic, readonly) int64_t memoryPurgable;
+/// 当前应用所占内存
+@property (nonatomic, readonly) int64_t usedMemory;
+
+
 
 ///=============================================================================
 /// @name CPU Information

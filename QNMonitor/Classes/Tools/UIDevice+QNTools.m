@@ -312,6 +312,18 @@
     return vm_stat.inactive_count * page_size;
 }
 
+
+// 获取当前任务所占用的内存（单位：MB）
+- (int64_t)usedMemory
+{
+        struct mach_task_basic_info info;
+        mach_msg_type_number_t count = sizeof(info) / sizeof(integer_t);
+        if (task_info(mach_task_self(), MACH_TASK_BASIC_INFO, (task_info_t)&info, &count) == KERN_SUCCESS) {
+            return info.resident_size;
+        }
+}
+
+
 - (int64_t)memoryWired {
     mach_port_t host_port = mach_host_self();
     mach_msg_type_number_t host_size = sizeof(vm_statistics_data_t) / sizeof(integer_t);

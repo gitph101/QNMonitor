@@ -11,6 +11,8 @@
 #import "QNFPSMonitor.h"
 #import "QNTopWindow.h"
 #import "QNMonitorDisplayer.h"
+#define MEMOVALUE (1024 * 1024.0)
+
 
 @interface QNMonitorManager ()<QNFPSMonitorDelegate>
 
@@ -45,7 +47,7 @@
     if (self) {
         self.monitorView = [[QNMonitorDisplayer alloc]init];
         self.monitorView.bounds = CGRectMake(0, 0, 200, 30);
-        self.monitorView.center = CGPointMake(120, 30);
+        self.monitorView.center = CGPointMake(120, 60);
         [[QNTopWindow topWindow]addSubview:self.monitorView];
         [QNFPSMonitor sharedMonitor].delegate = self;
     }
@@ -55,21 +57,24 @@
 - (void)startMonitoring {
         
     self.cpu = [[UIDevice currentDevice] cpuUsage];
-    self.memory = [[UIDevice currentDevice] memoryUsed]/1000/1000.0;
+    self.memory = [[UIDevice currentDevice] memoryUsed]/1000/1000;
     self.fps = [QNFPSMonitor sharedMonitor].fps;
     [self.monitorView showValueFPS:self.fps cpu:self.cpu memory:self.memory];
+    
 }
 
 -(void)updateFPS:(QNFPSMonitor *)monitor fps:(NSInteger)fps
 {
     self.cpu = [[UIDevice currentDevice] cpuUsage];
-    self.memory = [[UIDevice currentDevice] memoryFree]/1000/1000.0;
+    self.memory = [[UIDevice currentDevice] usedMemory]/MEMOVALUE;
     self.fps = [QNFPSMonitor sharedMonitor].fps;
     [self.monitorView showValueFPS:self.fps cpu:self.cpu memory:self.memory];
 }
 
 - (void)stopMonitoring {
      [[QNFPSMonitor sharedMonitor] stopMonitoring];
+    [self.monitorView removeFromSuperview];
+    self.monitorView = nil;
 }
 
 
