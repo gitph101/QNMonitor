@@ -12,25 +12,25 @@ NSUncaughtExceptionHandler *exceptionHandler;
 
 @implementation QNCrashMonitor
 
-static void _qn_exception_caught(NSException * exception) {
+static void _qn_exception_caught(NSException * exception)
+{
+    /*
     NSDictionary * infoDict = [[NSBundle mainBundle] infoDictionary];
     NSString * appInfo = [NSString stringWithFormat: @"Device: %@\nOS Version: %@\nOS System: %@", [UIDevice currentDevice].model, infoDict[@"CFBundleShortVersionString"], [[UIDevice currentDevice].systemName stringByAppendingString: [UIDevice currentDevice].systemVersion]];
-    
-
+    */
     if (exceptionHandler != NULL) {
         (*exceptionHandler)(exception);
     }
 }
 
-
-static void _qn_signal_handler(int signal) {
+static void _qn_signal_handler(int signal)
+{
     _qn_exception_caught([NSException exceptionWithName: __signal_name(signal) reason: __signal_reason(signal) userInfo: nil]);
     [QNCrashMonitor _killApp];
 }
 
-
-
-CF_INLINE NSString * __signal_name(int signal) {
+CF_INLINE NSString * __signal_name(int signal)
+{
     switch (signal) {
             /// 非法指令
         case SIGILL:
@@ -55,7 +55,8 @@ CF_INLINE NSString * __signal_name(int signal) {
     }
 }
 
-CF_INLINE NSString * __signal_reason(int signal) {
+CF_INLINE NSString * __signal_reason(int signal)
+{
     switch (signal) {
             /// 非法指令
         case SIGILL:
@@ -82,7 +83,10 @@ CF_INLINE NSString * __signal_reason(int signal) {
 
 
 #pragma mark - Public
-+ (void)startMonitoring {
+
+
++ (void)startMonitoring
+{
     exceptionHandler = NSGetUncaughtExceptionHandler();
     NSSetUncaughtExceptionHandler(_qn_exception_caught);
     signal(SIGILL, _qn_signal_handler);
@@ -95,7 +99,10 @@ CF_INLINE NSString * __signal_reason(int signal) {
 
 
 #pragma mark - Private
-+ (void)_killApp {
+
+
++ (void)_killApp
+{
     NSSetUncaughtExceptionHandler(NULL);
     signal(SIGILL, SIG_DFL);
     signal(SIGFPE, SIG_DFL);
@@ -105,8 +112,5 @@ CF_INLINE NSString * __signal_reason(int signal) {
     signal(SIGABRT, SIG_DFL);
     kill(getpid(), SIGKILL);
 }
-
-
-
 
 @end

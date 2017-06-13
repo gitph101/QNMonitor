@@ -20,7 +20,8 @@
 
 @implementation QNFluencyMonitor
 
-+ (instancetype)sharedInstance{
++ (instancetype)sharedInstance
+{
     static dispatch_once_t once;
     static id sharedInstance;
     dispatch_once(&once, ^{
@@ -30,17 +31,20 @@
 
 }
 
-+ (void) startMonitor{
++ (void) startMonitor
+{
     [[self sharedInstance] addRunLoopObserver];
 }
 
 
-+ (void) endMonitor{
++ (void) endMonitor
+{
     [[self sharedInstance] endMonitor];
 
 }
 
--(void)endMonitor {
+-(void)endMonitor
+{
     if (!_observer) {
         return;
     }
@@ -58,8 +62,8 @@ static void runLoopObserverCallBack(CFRunLoopObserverRef observer, CFRunLoopActi
 
 }
 
-
-- (void)addRunLoopObserver{
+- (void)addRunLoopObserver
+{
     CFRunLoopObserverContext context = {0,(__bridge void*)self,NULL,NULL};
     CFRunLoopObserverRef observer = CFRunLoopObserverCreate(kCFAllocatorDefault,
                                                             kCFRunLoopAllActivities,
@@ -73,11 +77,9 @@ static void runLoopObserverCallBack(CFRunLoopObserverRef observer, CFRunLoopActi
     
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         while (YES) {
-            // 假定连续5次超时50ms认为卡顿(当然也包含了单次超时250ms)
             long st = dispatch_semaphore_wait(_semaphore, dispatch_time(DISPATCH_TIME_NOW, 50*NSEC_PER_MSEC));
             if (st != 0) {
-                if (_activity==kCFRunLoopBeforeSources || _activity==kCFRunLoopAfterWaiting)
-                {
+                if (_activity==kCFRunLoopBeforeSources || _activity==kCFRunLoopAfterWaiting){
                     if (++_countTime < 5)
                         continue;
                     [self logStack];
@@ -90,8 +92,8 @@ static void runLoopObserverCallBack(CFRunLoopObserverRef observer, CFRunLoopActi
 }
 
 
-- (void)logStack{
-    //获取堆栈
+- (void)logStack
+{
 //    NSString *statck = [BSBacktraceLogger bs_backtraceOfMainThread];
 //    NSLog(@"堆栈信息：%@",statck);
 }

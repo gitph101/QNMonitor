@@ -8,15 +8,13 @@
 
 #import "QNMonitorDisplayer.h"
 
-
 @interface QNMonitorDisplayer()
 
 @property(nonatomic, strong) UILabel *monitorLabel;
 @property(nonatomic, strong) UIFont *font;
-@property(nonatomic, strong) UILabel *subFont;
+@property(nonatomic, strong) UIFont *subFont;
 
 @end
-
 
 @implementation QNMonitorDisplayer
 
@@ -29,10 +27,8 @@
         self.layer.cornerRadius = 5;
         self.clipsToBounds = YES;
         self.userInteractionEnabled = NO;
-        
         self.font = [UIFont fontWithName:@"Menlo" size:14];
         self.subFont = [UIFont fontWithName:@"Menlo" size:14];
-        
         if (self.font) {
             self.subFont = [UIFont fontWithName:@"Menlo" size:4];
         } else {
@@ -40,31 +36,25 @@
             self.subFont = [UIFont fontWithName:@"Courier" size:4];
         }
         [self addSubview:self.monitorLabel];
-        
-        _monitorLabel.frame =  self.bounds;
-
+        self.monitorLabel.frame =  self.bounds;
     }
     return self;
 }
 
-
-
--(void)showValueFPS:(float)fps cpu:(float) cpu memory:(float)memory{
+-(void)showValueFPS:(float)fps cpu:(float) cpu memory:(float)memory
+{
     
     self.monitorLabel.frame = self.bounds;
-
     NSMutableAttributedString *attributedStringFPS = [self attributedStringFPS:fps];
     NSMutableAttributedString *attributedStringCPU = [self attributedStringCPU:cpu];
     NSMutableAttributedString *attributedStringMemory = [self attributedStringMemory:memory];
-    
     [attributedStringCPU appendAttributedString:attributedStringMemory];
     [attributedStringCPU appendAttributedString:attributedStringFPS];
-    
     self.monitorLabel.attributedText = attributedStringCPU;
 }
 
-
--(NSMutableAttributedString *)attributedStringFPS:(float)fps{
+-(NSMutableAttributedString *)attributedStringFPS:(float)fps
+{
     
     UIColor *color = [UIColor colorWithHue:0.27 * (fps/100.0 - 0.2) saturation:1 brightness:0.9 alpha:1];
     NSMutableAttributedString *text = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%d FPS",(int)round(fps)]];
@@ -75,7 +65,8 @@
     return text;
 }
 
--(NSMutableAttributedString *)attributedStringCPU:(float)cpu{
+-(NSMutableAttributedString *)attributedStringCPU:(float)cpu
+{
     
     UIColor *color = [UIColor colorWithHue:0.27 * (cpu/100.0 - 0.2) saturation:1 brightness:0.9 alpha:1];
     NSMutableAttributedString *text = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%.2f CPU",(float)cpu]];
@@ -86,7 +77,8 @@
     return text;
 }
 
--(NSMutableAttributedString *)attributedStringMemory:(float)memory{
+-(NSMutableAttributedString *)attributedStringMemory:(float)memory
+{
     
     UIColor *color = [UIColor colorWithHue:0.27 * (memory/100.0 - 0.2) saturation:1 brightness:0.9 alpha:1];
     NSMutableAttributedString *text = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%.2f MEM",(float)memory]];
@@ -98,10 +90,11 @@
 }
 
 
+#pragma - Get and Set
 
-#pragma ger and set
 
--(UILabel *)monitorLabel{
+-(UILabel *)monitorLabel
+{
     if (!_monitorLabel) {
         _monitorLabel = [[UILabel alloc]initWithFrame:self.bounds];
         _monitorLabel.textAlignment = NSTextAlignmentCenter;

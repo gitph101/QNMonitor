@@ -16,7 +16,7 @@
 
 @property(nonatomic, strong) UILabel *fpsLabel;
 @property(nonatomic, strong) UIFont *font;
-@property(nonatomic, strong) UILabel *subFont;
+@property(nonatomic, strong) UIFont *subFont;
 
 @end
 
@@ -32,17 +32,14 @@
         self.layer.cornerRadius = 5;
         self.clipsToBounds = YES;
         self.userInteractionEnabled = NO;
-        
         self.font = [UIFont fontWithName:@"Menlo" size:14];
         self.subFont = [UIFont fontWithName:@"Menlo" size:14];
-        
         if (self.font) {
             self.subFont = [UIFont fontWithName:@"Menlo" size:4];
         } else {
             self.font = [UIFont fontWithName:@"Courier" size:14];
             self.subFont = [UIFont fontWithName:@"Courier" size:4];
         }
-        
         [self addSubview:self.fpsLabel];
         [QNFPSMonitor sharedMonitor].delegate = self;
         [self updateFPS:nil fps:60];
@@ -50,7 +47,8 @@
     return self;
 }
 
-+(void)showView:(UIView *)presentView{
++(void)showView:(UIView *)presentView
+{
     QNFPSDisplayer *disView = [[QNFPSDisplayer alloc]init];
     [presentView addSubview:disView];
 }
@@ -60,7 +58,8 @@
     self.fpsLabel.attributedText = [self attributedStringFPS:fps];
 }
 
--(NSMutableAttributedString *)attributedStringFPS:(NSInteger)fps{
+-(NSMutableAttributedString *)attributedStringFPS:(NSInteger)fps
+{
     
     UIColor *color = [UIColor colorWithHue:0.27 * (fps/100.0 - 0.2) saturation:1 brightness:0.9 alpha:1];
     NSMutableAttributedString *text = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%d FPS",(int)round(fps)]];
@@ -72,9 +71,11 @@
 }
 
 
-#pragma ger and set
+#pragma - Get and Set
 
--(UILabel *)fpsLabel{
+
+-(UILabel *)fpsLabel
+{
     if (!_fpsLabel) {
         _fpsLabel = [[UILabel alloc]initWithFrame:self.bounds];
         _fpsLabel.textAlignment = NSTextAlignmentCenter;

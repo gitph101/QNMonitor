@@ -23,7 +23,8 @@
 
 @implementation UIDevice (QNTools)
 
-+ (double)systemVersion {
++ (double)systemVersion
+{
     static double version;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -32,7 +33,8 @@
     return version;
 }
 
-- (BOOL)isPad {
+- (BOOL)isPad
+{
     static dispatch_once_t one;
     static BOOL pad;
     dispatch_once(&one, ^{
@@ -41,7 +43,8 @@
     return pad;
 }
 
-- (BOOL)isSimulator {
+- (BOOL)isSimulator
+{
     static dispatch_once_t one;
     static BOOL simu;
     dispatch_once(&one, ^{
@@ -50,7 +53,8 @@
     return simu;
 }
 
-- (NSString *)machineModel {
+- (NSString *)machineModel
+{
     static dispatch_once_t one;
     static NSString *model;
     dispatch_once(&one, ^{
@@ -64,7 +68,8 @@
     return model;
 }
 
-+ (NSString *)macAddress {
++ (NSString *)macAddress
+{
     int                 mib[6];
     size_t              len;
     char                *buf;
@@ -109,7 +114,8 @@
 }
 
 
-- (NSString *)machineModelName {
+- (NSString *)machineModelName
+{
     static dispatch_once_t one;
     static NSString *name;
     dispatch_once(&one, ^{
@@ -212,19 +218,23 @@
 
 #pragma mark - memory information
 
-+ (NSUInteger)cpuFrequency {
++ (NSUInteger)cpuFrequency
+{
     return [self getSysInfo:HW_CPU_FREQ];
 }
 
-+ (NSUInteger)busFrequency {
++ (NSUInteger)busFrequency
+{
     return [self getSysInfo:HW_BUS_FREQ];
 }
 
-+ (NSUInteger)ramSize {
++ (NSUInteger)ramSize
+{
     return [self getSysInfo:HW_MEMSIZE];
 }
 
-+ (NSUInteger)cpuNumber {
++ (NSUInteger)cpuNumber
+{
     return [self getSysInfo:HW_NCPU];
 }
 
@@ -256,7 +266,8 @@
     return mem;
 }
 
-- (int64_t)memoryUsed {
+- (int64_t)memoryUsed
+{
     mach_port_t host_port = mach_host_self();
     mach_msg_type_number_t host_size = sizeof(vm_statistics_data_t) / sizeof(integer_t);
     vm_size_t page_size;
@@ -270,7 +281,8 @@
     return page_size * (vm_stat.active_count + vm_stat.inactive_count + vm_stat.wire_count);
 }
 
-- (int64_t)memoryFree {
+- (int64_t)memoryFree
+{
     mach_port_t host_port = mach_host_self();
     mach_msg_type_number_t host_size = sizeof(vm_statistics_data_t) / sizeof(integer_t);
     vm_size_t page_size;
@@ -355,11 +367,14 @@
 
 #pragma mark - cpu information
 
-- (NSUInteger)cpuCount {
+
+- (NSUInteger)cpuCount
+{
     return [NSProcessInfo processInfo].activeProcessorCount;
 }
 
-- (float)cpuUsage {
+- (float)cpuUsage
+{
     float cpu = 0;
     NSArray *cpus = [self cpuUsagePerProcessor];
     if (cpus.count == 0) return -1;
@@ -369,7 +384,8 @@
     return cpu;
 }
 
-- (NSArray *)cpuUsagePerProcessor {
+- (NSArray *)cpuUsagePerProcessor
+{
     processor_info_array_t _cpuInfo, _prevCPUInfo = nil;
     mach_msg_type_number_t _numCPUInfo, _numPrevCPUInfo = 0;
     unsigned _numCPUs;
@@ -420,8 +436,8 @@
 #pragma mark - disk information
 
 
-
-- (int64_t)diskSpace {
+- (int64_t)diskSpace
+{
     NSError *error = nil;
     NSDictionary *attrs = [[NSFileManager defaultManager] attributesOfFileSystemForPath:NSHomeDirectory() error:&error];
     if (error) return -1;
@@ -430,7 +446,8 @@
     return space;
 }
 
-- (int64_t)diskSpaceFree {
+- (int64_t)diskSpaceFree
+{
     NSError *error = nil;
     NSDictionary *attrs = [[NSFileManager defaultManager] attributesOfFileSystemForPath:NSHomeDirectory() error:&error];
     if (error) return -1;
@@ -439,7 +456,8 @@
     return space;
 }
 
-- (int64_t)diskSpaceUsed {
+- (int64_t)diskSpaceUsed
+{
     int64_t total = self.diskSpace;
     int64_t free = self.diskSpaceFree;
     if (total < 0 || free < 0) return -1;
@@ -448,7 +466,6 @@
     return used;
 }
 
-///
 + (long long)freeDiskSpaceBytes
 {
     struct statfs buf;
@@ -470,5 +487,6 @@
     }
     return totalspace;
 }
+
 
 @end

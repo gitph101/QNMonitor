@@ -8,13 +8,12 @@
 
 #import "QNTopWindow.h"
 
-
 static QNTopWindow * top_window;
-
 
 @implementation QNTopWindow
 
-+ (instancetype)topWindow {
++ (instancetype)topWindow
+{
 #if DEBUG
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -29,7 +28,8 @@ static QNTopWindow * top_window;
     return [[self class] topWindow];
 }
 
-- (instancetype)initWithFrame: (CGRect)frame {
+- (instancetype)initWithFrame: (CGRect)frame
+{
     if (self = [super initWithFrame: frame]) {
         [super setUserInteractionEnabled: NO];
         [super setWindowLevel: CGFLOAT_MAX];

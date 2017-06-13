@@ -4,7 +4,7 @@
 //
 //  Created by 研究院01 on 17/5/26.
 //
-//
+// 来YYKit
 
 #import <Foundation/Foundation.h>
 
@@ -13,7 +13,6 @@
 @property (nonatomic, weak, readonly) id target;
 
 - (instancetype)initWithTarget:(id)target;
-
 + (instancetype)proxyWithTarget:(id)target;
 
 @end

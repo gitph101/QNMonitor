@@ -11,28 +11,23 @@
 #import "QNFPSMonitor.h"
 #import "QNTopWindow.h"
 #import "QNMonitorDisplayer.h"
-#define MEMOVALUE (1024 * 1024.0)
 
+#define MEMOVALUE (1024 * 1024.0)
 
 @interface QNMonitorManager ()<QNFPSMonitorDelegate>
 
-@property (nonatomic, assign) NSInteger  sysCpu;
-@property (nonatomic, assign) NSInteger  appCpu;
-@property (nonatomic, assign) NSInteger  sysMemory;
-@property (nonatomic, assign) NSInteger  ppMemory;
-
-@property (nonatomic, assign, readwrite) float  cpu;
-@property (nonatomic, assign, readwrite) float  memory;
+@property (nonatomic, assign, readwrite) float cpu;
+@property (nonatomic, assign, readwrite) float memory;
 @property (nonatomic, assign, readwrite) float fps;
 
-@property(nonatomic,strong)QNMonitorDisplayer *monitorView;
+@property(nonatomic, strong) QNMonitorDisplayer *monitorView;
 
 @end
 
-
 @implementation QNMonitorManager
 
-+(instancetype)shareManager{
++(instancetype)shareManager
+{
     static QNMonitorManager *shareManager;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -54,7 +49,8 @@
     return self;
 }
 
-- (void)startMonitoring {
+- (void)startMonitoring
+{
         
     self.cpu = [[UIDevice currentDevice] cpuUsage];
     self.memory = [[UIDevice currentDevice] memoryUsed]/1000/1000;
@@ -63,6 +59,14 @@
     
 }
 
+- (void)stopMonitoring
+{
+    [[QNFPSMonitor sharedMonitor] stopMonitoring];
+    [self.monitorView removeFromSuperview];
+    self.monitorView = nil;
+}
+
+//QNFPSMonitorDelegate
 -(void)updateFPS:(QNFPSMonitor *)monitor fps:(NSInteger)fps
 {
     self.cpu = [[UIDevice currentDevice] cpuUsage];
@@ -70,14 +74,6 @@
     self.fps = [QNFPSMonitor sharedMonitor].fps;
     [self.monitorView showValueFPS:self.fps cpu:self.cpu memory:self.memory];
 }
-
-- (void)stopMonitoring {
-     [[QNFPSMonitor sharedMonitor] stopMonitoring];
-    [self.monitorView removeFromSuperview];
-    self.monitorView = nil;
-}
-
-
 
 
 @end
